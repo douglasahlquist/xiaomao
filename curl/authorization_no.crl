@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+echo "You provided the arguments:" "$@"
+
+export CLIENT=$0
+export CLIENT_ID=$1
+export CLIENT_SECRET=$2
+export STATE=$3
+export AUTH="$CLIENT $CLIENT_ID $CLIENT_SECRET"
+export HEROKU_BASE_URI=
+export REDIRECT_URI=
+
+export CASHAPP_BASE_URL=http://api.cash.app 
+
+curl -H "Authorization: $AUTH" -H "Content-Type: application/json" -X POST -d '{"state": "$STATE", "customer_id": "$CLIENT_ID"}'  https;//api.cash.app/v2/authorization

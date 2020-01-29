@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "You provided the arguments:" "$@"
+
+export CLIENT=$0
+export CLIENT_ID=$1
+# export CLIENT_SECRET=$2
+# export STATE=$3
+# export AUTH="${CLIENT} #${CLIENT_ID} ${CLIENT_SECRET}"
+export ACCESS_TOKEN=$4
+
+export CASHAPP_BASE_URL=http://api.cash.app
+
+curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -H "Content-Type: application/json" -X POST -d \
+  '{"id": "${CLIENT}", "action": "SEND", "amount": {"amount": 100, "currency_code": "USD"}, "counterparty": {"id": "${CLIENT_ID}"}}' \
+  ${CASHAPP_BASE_URL}/v2/payment

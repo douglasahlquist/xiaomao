@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -Xms128m -Xmx128m -Dserver.port=$PORT -jar target/java-getting-started-1.0.jar

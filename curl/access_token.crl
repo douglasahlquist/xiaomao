@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "You provided the arguments:" "$@"
+
+export CLIENT=$0
+export CLIENT_ID=$1
+export CLIENT_SECRET=$2
+export STATE=$3
+export AUTH="$CLIENT $CLIENT_ID $CLIENT_SECRET"
+
+export CASHAPP_BASE_URL="https://api.cash.app"
+export REFRESH_TOKEN=$4
+
+OUTPUT=$(curl -H "Authorization: $AUTH" -H "Content-Type: application/json" -X POST -d  '{"authorization_code": "$AUTH_CODE", "customer_id": "$CLIENT", "refresh_token":"$REFRESH_TOKEN"}' https://api/cash.app/v2/access-token)
+
+echo $OUTPUT

@@ -1,0 +1,57 @@
+{
+  "for_user_id": "1102321381",
+  "direct_message_events": [
+    {
+      "type": "message_create",
+      "id": "113367412",
+      "created_timestamp": "1559123947602",
+      "message_create": {
+        "target": {
+          "recipient_id": "1102321381"
+        },
+        "sender_id": "102974183",
+        "message_data": {
+          "text": "Good morning ☀️☕  $FirstCashTag1234",
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+          }
+        }
+      }
+    }
+  ],
+  "users": {
+    "1102321381": {
+      "id": "1102321381",
+      "created_timestamp": "1358552743000",
+      "name": "Aurelia Specker",
+      "screen_name": "AureliaSpecker",
+      "location": "London, England",
+      "description": "partner engineer @TwitterUK 👩‍💻 • instructor @CodeFirstGirls • alumni @UniofOxford 🎓 • outdoor enthusiast 🌄 • bookworm 📚 • from switzerland 🇨🇭",
+      "protected": false,
+      "verified": false,
+      "followers_count": 589,
+      "friends_count": 745,
+      "statuses_count": 521,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1025560966434443264/vsVPbXiT_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1025560966434443264/vsVPbXiT_normal.jpg"
+    },
+    "1029741837916012544": {
+      "id": "1029741837916012544",
+      "created_timestamp": "1534344560624",
+      "name": "Aurelia",
+      "screen_name": "re_testing",
+      "location": "London, England",
+      "description": "I like travelling 🐪🌴☀️",
+      "protected": false,
+      "verified": false,
+      "followers_count": 4,
+      "friends_count": 10,
+      "statuses_count": 52,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1029742489090121728/-83RqB5N_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1029742489090121728/-83RqB5N_normal.jpg"
+    }
+  }
+}
